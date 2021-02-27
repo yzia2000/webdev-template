@@ -13,10 +13,9 @@ services:
             - ./dbscripts:/docker-entrypoint-initdb.d
 
     sut:
-        image: yzia2000/api:test
+        image: yzia2000/temp-api:test
         environment:
             - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
-        environment:
             - NODE_ENV=test
         build:
             context: .

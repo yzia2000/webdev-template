@@ -100,12 +100,24 @@ POSTGRES_PASSWORD=postgres POSTGRES_USER=postgres POSTGRES_DB=database docker-co
 ```
 
 Database environment variables POSTGRES_PASSWORD, POSTGRES_USER and POSTGRES_DB need to be set
-prior the docker build.
+prior the docker build. An env file can be used instead of the above script.
 
 The dev server can be accessed at http://localhost:5000.
 
-## Deployment
-TBC
+## Deployment Server
+```
+cd backend
+```
+
+2. Run the docker compose prod server
+```
+POSTGRES_PASSWORD=postgres POSTGRES_USER=postgres POSTGRES_DB=database docker-compose -f up --build
+```
+
+Database environment variables POSTGRES_PASSWORD, POSTGRES_USER and POSTGRES_DB need to be set
+prior the docker build. An env file can be used instead of the above script.
+
+The dev server can be accessed at http://localhost:5000.
 
 ## Testing
 TBC

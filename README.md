@@ -3,8 +3,8 @@
 ## Project Heirarchy
 ```
 |- root
-|---- frontend
-|---- backend
+|---- core
+|---- web
 |---- README.md
 |---- CONTRIBUTING.md
 ```
